@@ -1,7 +1,10 @@
-# Конфигурационные параметры бота (замените на свои данные)
-API_ID = "(получаем на my.telegram.org)"                 # Ваш API ID (получаем на my.telegram.org)
-API_HASH = "(получаем на my.telegram.org)"               # Ваш API HASH
-PHONE = "+0000"                                          # Номер телефона аккаунта
+# Telegram API credentials (get from my.telegram.org)
+API_ID = 0000 # (get from my.telegram.org)
+API_HASH = "(get from my.telegram.org)"
 
-# Текст, который бот будет отправлять в ответ
+# Account credentials
+PHONE_NUMBER = "+888..."
+
+# Bot settings
 AUTO_REPLY_TEXT = "Вы колонизированны!"
+SESSION_NAME = "auto_reply_bot"
