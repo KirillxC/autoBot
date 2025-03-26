@@ -1,13 +1,6 @@
 from telethon import TelegramClient, events
 import asyncio
-
-# Конфигурация (замените на свои данные)
-API_ID = "(получаем на my.telegram.org)"                 # Ваш API ID (получаем на my.telegram.org)
-API_HASH = "(получаем на my.telegram.org)"           # Ваш API HASH
-PHONE = "+0000"              # Номер телефона аккаунта
-
-# Текст, который бот будет отправлять в ответ
-AUTO_REPLY_TEXT = "Вы колонизированны!"
+from config import API_ID, API_HASH, PHONE, AUTO_REPLY_TEXT
 
 # Инициализация клиента Telegram
 client = TelegramClient('session_name', API_ID, API_HASH)
@@ -26,5 +19,5 @@ async def main():
     print("Бот запущен и слушает сообщения...")
     await client.run_until_disconnected()
 
-if name == "main":
+if __name__ == "__main__":
     asyncio.run(main())
